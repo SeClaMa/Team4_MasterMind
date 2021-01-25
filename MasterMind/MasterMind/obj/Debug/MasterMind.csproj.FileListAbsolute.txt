@@ -1,0 +1,10 @@
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.exe.config
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.exe
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.pdb
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csprojAssemblyReference.cache
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.Form1.resources
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.Properties.Resources.resources
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.GenerateResource.cache
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.CoreCompileInputs.cache
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.exe
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.pdb
