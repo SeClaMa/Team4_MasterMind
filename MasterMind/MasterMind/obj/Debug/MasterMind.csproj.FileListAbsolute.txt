@@ -1,0 +1,30 @@
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.exe.config
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.exe
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.pdb
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csprojAssemblyReference.cache
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.Form1.resources
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.Properties.Resources.resources
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.GenerateResource.cache
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.CoreCompileInputs.cache
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.exe
+D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.pdb
+D:\Cursillos\Ejercicios\Proyectos\MasterMind\MasterMind\bin\Debug\MasterMind.exe.config
+D:\Cursillos\Ejercicios\Proyectos\MasterMind\MasterMind\bin\Debug\MasterMind.exe
+D:\Cursillos\Ejercicios\Proyectos\MasterMind\MasterMind\bin\Debug\MasterMind.pdb
+D:\Cursillos\Ejercicios\Proyectos\MasterMind\MasterMind\obj\Debug\MasterMind.csprojAssemblyReference.cache
+D:\Cursillos\Ejercicios\Proyectos\MasterMind\MasterMind\obj\Debug\MasterMind.Form1.resources
+D:\Cursillos\Ejercicios\Proyectos\MasterMind\MasterMind\obj\Debug\MasterMind.Properties.Resources.resources
+D:\Cursillos\Ejercicios\Proyectos\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.GenerateResource.cache
+D:\Cursillos\Ejercicios\Proyectos\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.CoreCompileInputs.cache
+D:\Cursillos\Ejercicios\Proyectos\MasterMind\MasterMind\obj\Debug\MasterMind.exe
+D:\Cursillos\Ejercicios\Proyectos\MasterMind\MasterMind\obj\Debug\MasterMind.pdb
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.exe.config
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.exe
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\bin\Debug\MasterMind.pdb
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csprojAssemblyReference.cache
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.Form1.resources
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.Properties.Resources.resources
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.GenerateResource.cache
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.csproj.CoreCompileInputs.cache
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.exe
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.pdb
