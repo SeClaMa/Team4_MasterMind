@@ -56,7 +56,7 @@ namespace MasterMind
             return true;
         }
 
-        public void ComprobarSolucion(List<PictureBox> resultados, List<PictureBox> solucion)
+        public void ComprobarSolucion(List<PictureBox> resultados, List<PictureBox> solucion,List<PictureBox> compro)
         {
             int contador_total = 0;
             int contador_parcial = 0;
@@ -66,39 +66,39 @@ namespace MasterMind
             
             for (int i = 0; i < resultados.Count; i++)
             {
-                resultados_espejo.AddRange(resultados);
+                resultados_espejo.Add(resultados[i]);
             }
 
             for (int i = 0; i < solucion.Count; i++)
             {
                 solucion_espejo.Add(solucion[i]);
             }
-            
 
-            MessageBox.Show(Convert.ToString(resultados.Count));
-
-            for (int i = 0; i < resultados.Count; i++)
+            for (int i = resultados.Count-1; i >= 0; i--)
             {
-                MessageBox.Show(Convert.ToString(i));
-                MessageBox.Show("A: " + resultados[i].BackColor + " B: " + solucion[i].BackColor);
                     if (resultados[i].BackColor == solucion[i].BackColor)
                     {
                     contador_total++;
                     resultados_espejo.RemoveAt(i);
                     solucion_espejo.RemoveAt(i);
-                }
+                    }
             }
 
-            for (int i = 0; i < resultados_espejo.Count; i++)
+            for (int i = resultados_espejo.Count-1; i >=0; i--)
             {
-                for(int x=0;x<resultados_espejo.Count;x++)
-                if (resultados_espejo[i].BackColor == solucion_espejo[x].BackColor)
+                for (int x = solucion_espejo.Count-1; x >=0; x--)
                 {
-                    contador_parcial++;
+                    if (resultados_espejo[i].BackColor == solucion_espejo[x].BackColor)
+                    {
+                        contador_parcial++;
+                        solucion_espejo.RemoveAt(x);
+                        resultados_espejo.RemoveAt(i);
+                        break;
+                    }
                 }
             }
             MessageBox.Show("Totales: " + contador_total + " . Parciales: " + contador_parcial);
-            //PintarSolucion(contador_total, contador_parcial, compro);
+            PintarSolucion(contador_total, contador_parcial, compro);
         }
 
         public void PintarSolucion(int cont_total,int cont_parcial,List<PictureBox> compro)
@@ -121,8 +121,11 @@ namespace MasterMind
                 }
                 
             }
+        }
 
-            
+        public void CambioTurno()
+        {
+
         }
     }
 }

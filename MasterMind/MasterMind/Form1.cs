@@ -38,7 +38,6 @@ namespace MasterMind
         List<PictureBox> comprobacion8 = new List<PictureBox>(); // comp. solución 8
         List<PictureBox> comprobacion9 = new List<PictureBox>(); // comp. solución 9
         List<PictureBox> comprobacion10 = new List<PictureBox>(); // comp. solución 10
-        int contador_turno = 1;
         int contador = 0;
         Utilidades U1 = new Utilidades();
         
@@ -180,7 +179,8 @@ namespace MasterMind
         private void button1_Click(object sender, EventArgs e)
         {
             if(U1.ComprobarSolucionBlancos(resultados1, arrayPicColoresDisp) == true){
-                U1.ComprobarSolucion(resultados1, arrayPicColoresSol);
+                U1.ComprobarSolucion(resultados1, arrayPicColoresSol,comprobacion1);
+
             }
             else
             {

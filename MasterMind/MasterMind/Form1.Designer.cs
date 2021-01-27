@@ -206,14 +206,14 @@ namespace MasterMind
             // nuevoJuegoToolStripMenuItem
             // 
             this.nuevoJuegoToolStripMenuItem.Name = "nuevoJuegoToolStripMenuItem";
-            this.nuevoJuegoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.nuevoJuegoToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.nuevoJuegoToolStripMenuItem.Text = "Nuevo Juego";
             this.nuevoJuegoToolStripMenuItem.Click += new System.EventHandler(this.nuevoJuegoToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(178, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // sol1_1
@@ -262,7 +262,7 @@ namespace MasterMind
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(231, 88);
+            this.button1.Location = new System.Drawing.Point(225, 86);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 32);
             this.button1.TabIndex = 7;
