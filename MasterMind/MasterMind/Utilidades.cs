@@ -18,7 +18,14 @@ namespace MasterMind
             resultados.Add(pic4);
             resultados.Add(pic5);
             resultados.Add(pic6);
+        }
 
+        public void UnlockLista(List<PictureBox> list_unlock)
+        {
+            foreach (PictureBox p in list_unlock)
+            {
+                p.Enabled = true;
+            }
         }
 
         public void LimpiarListas(Color[] a_color,List<int> n_repe,List<PictureBox> colores_disp, List<PictureBox> solucion, List<PictureBox> sol1, List<PictureBox> sol2, List<PictureBox> sol3, List<PictureBox> sol4, List<PictureBox> sol5, List<PictureBox> sol6, List<PictureBox> sol7, List<PictureBox> sol8, List<PictureBox> sol9, List<PictureBox> sol10)
@@ -166,9 +173,26 @@ namespace MasterMind
             }
         }
 
-        public void CambioTurno()
+        public void CambioTurno(Button button_ocultar, Button button_mostrar, List<PictureBox> lista_Bloquear, List<PictureBox> lista_Mostrar, List<PictureBox> comprobar_mostrar)
         {
+            button_ocultar.Hide();
+            button_mostrar.Show();
+            foreach (PictureBox p in lista_Bloquear)
+            {
+                p.Enabled = false;
+            }
+
+            foreach (PictureBox p in lista_Mostrar)
+            {
+                p.Show();
+            }
+
+            foreach (PictureBox p in comprobar_mostrar)
+            {
+                p.Show();
+            }
 
         }
+        
     }
 }

@@ -30,15 +30,15 @@ namespace MasterMind
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic_disp4 = new System.Windows.Forms.PictureBox();
+            this.pic_disp3 = new System.Windows.Forms.PictureBox();
+            this.pic_disp2 = new System.Windows.Forms.PictureBox();
+            this.pic_disp1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pic_sec1 = new System.Windows.Forms.PictureBox();
+            this.pic_sec4 = new System.Windows.Forms.PictureBox();
+            this.pic_sec2 = new System.Windows.Forms.PictureBox();
+            this.pic_sec3 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.archivoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoJuegoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -173,16 +173,20 @@ namespace MasterMind
             this.comp2_5 = new System.Windows.Forms.PictureBox();
             this.comp1_6 = new System.Windows.Forms.PictureBox();
             this.comp1_5 = new System.Windows.Forms.PictureBox();
+            this.pic_disp5 = new System.Windows.Forms.PictureBox();
+            this.pic_disp6 = new System.Windows.Forms.PictureBox();
+            this.pic_sec5 = new System.Windows.Forms.PictureBox();
+            this.pic_sec6 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_disp4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_disp3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_disp2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_disp1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_sec1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_sec4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_sec2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_sec3)).BeginInit();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sol1_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sol1_2)).BeginInit();
@@ -304,14 +308,20 @@ namespace MasterMind
             ((System.ComponentModel.ISupportInitialize)(this.comp2_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comp1_6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comp1_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_disp5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_disp6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_sec5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_sec6)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.pictureBox4);
-            this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.pic_disp6);
+            this.groupBox1.Controls.Add(this.pic_disp5);
+            this.groupBox1.Controls.Add(this.pic_disp4);
+            this.groupBox1.Controls.Add(this.pic_disp3);
+            this.groupBox1.Controls.Add(this.pic_disp2);
+            this.groupBox1.Controls.Add(this.pic_disp1);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox1.Location = new System.Drawing.Point(719, 40);
             this.groupBox1.Name = "groupBox1";
@@ -320,48 +330,50 @@ namespace MasterMind
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Colores Disponibles";
             // 
-            // pictureBox4
+            // pic_disp4
             // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Location = new System.Drawing.Point(157, 43);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox4.TabIndex = 3;
-            this.pictureBox4.TabStop = false;
+            this.pic_disp4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_disp4.Location = new System.Drawing.Point(149, 43);
+            this.pic_disp4.Name = "pic_disp4";
+            this.pic_disp4.Size = new System.Drawing.Size(24, 24);
+            this.pic_disp4.TabIndex = 3;
+            this.pic_disp4.TabStop = false;
             // 
-            // pictureBox3
+            // pic_disp3
             // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(110, 43);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
+            this.pic_disp3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_disp3.Location = new System.Drawing.Point(106, 43);
+            this.pic_disp3.Name = "pic_disp3";
+            this.pic_disp3.Size = new System.Drawing.Size(24, 24);
+            this.pic_disp3.TabIndex = 2;
+            this.pic_disp3.TabStop = false;
             // 
-            // pictureBox2
+            // pic_disp2
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(65, 43);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.pic_disp2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_disp2.Location = new System.Drawing.Point(65, 43);
+            this.pic_disp2.Name = "pic_disp2";
+            this.pic_disp2.Size = new System.Drawing.Size(24, 24);
+            this.pic_disp2.TabIndex = 1;
+            this.pic_disp2.TabStop = false;
             // 
-            // pictureBox1
+            // pic_disp1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 43);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pic_disp1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_disp1.Location = new System.Drawing.Point(22, 43);
+            this.pic_disp1.Name = "pic_disp1";
+            this.pic_disp1.Size = new System.Drawing.Size(24, 24);
+            this.pic_disp1.TabIndex = 0;
+            this.pic_disp1.TabStop = false;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.pictureBox5);
-            this.groupBox2.Controls.Add(this.pictureBox8);
-            this.groupBox2.Controls.Add(this.pictureBox6);
-            this.groupBox2.Controls.Add(this.pictureBox7);
+            this.groupBox2.Controls.Add(this.pic_sec6);
+            this.groupBox2.Controls.Add(this.pic_sec5);
+            this.groupBox2.Controls.Add(this.pic_sec1);
+            this.groupBox2.Controls.Add(this.pic_sec4);
+            this.groupBox2.Controls.Add(this.pic_sec2);
+            this.groupBox2.Controls.Add(this.pic_sec3);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.groupBox2.Location = new System.Drawing.Point(719, 172);
             this.groupBox2.Name = "groupBox2";
@@ -370,41 +382,41 @@ namespace MasterMind
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Combinación Secreta";
             // 
-            // pictureBox5
+            // pic_sec1
             // 
-            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox5.Location = new System.Drawing.Point(22, 41);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
+            this.pic_sec1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_sec1.Location = new System.Drawing.Point(22, 41);
+            this.pic_sec1.Name = "pic_sec1";
+            this.pic_sec1.Size = new System.Drawing.Size(24, 24);
+            this.pic_sec1.TabIndex = 7;
+            this.pic_sec1.TabStop = false;
             // 
-            // pictureBox8
+            // pic_sec4
             // 
-            this.pictureBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox8.Location = new System.Drawing.Point(157, 41);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox8.TabIndex = 4;
-            this.pictureBox8.TabStop = false;
+            this.pic_sec4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_sec4.Location = new System.Drawing.Point(149, 41);
+            this.pic_sec4.Name = "pic_sec4";
+            this.pic_sec4.Size = new System.Drawing.Size(24, 24);
+            this.pic_sec4.TabIndex = 4;
+            this.pic_sec4.TabStop = false;
             // 
-            // pictureBox6
+            // pic_sec2
             // 
-            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox6.Location = new System.Drawing.Point(65, 41);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox6.TabIndex = 6;
-            this.pictureBox6.TabStop = false;
+            this.pic_sec2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_sec2.Location = new System.Drawing.Point(65, 41);
+            this.pic_sec2.Name = "pic_sec2";
+            this.pic_sec2.Size = new System.Drawing.Size(24, 24);
+            this.pic_sec2.TabIndex = 6;
+            this.pic_sec2.TabStop = false;
             // 
-            // pictureBox7
+            // pic_sec3
             // 
-            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7.Location = new System.Drawing.Point(110, 41);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox7.TabIndex = 5;
-            this.pictureBox7.TabStop = false;
+            this.pic_sec3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_sec3.Location = new System.Drawing.Point(106, 41);
+            this.pic_sec3.Name = "pic_sec3";
+            this.pic_sec3.Size = new System.Drawing.Size(24, 24);
+            this.pic_sec3.TabIndex = 5;
+            this.pic_sec3.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -1344,6 +1356,7 @@ namespace MasterMind
             this.sol1_5.Size = new System.Drawing.Size(24, 24);
             this.sol1_5.TabIndex = 93;
             this.sol1_5.TabStop = false;
+            this.sol1_5.Click += new System.EventHandler(this.sol1_5_Click);
             // 
             // sol1_6
             // 
@@ -1735,6 +1748,42 @@ namespace MasterMind
             this.comp1_5.TabIndex = 113;
             this.comp1_5.TabStop = false;
             // 
+            // pic_disp5
+            // 
+            this.pic_disp5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_disp5.Location = new System.Drawing.Point(191, 43);
+            this.pic_disp5.Name = "pic_disp5";
+            this.pic_disp5.Size = new System.Drawing.Size(24, 24);
+            this.pic_disp5.TabIndex = 133;
+            this.pic_disp5.TabStop = false;
+            // 
+            // pic_disp6
+            // 
+            this.pic_disp6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_disp6.Location = new System.Drawing.Point(236, 43);
+            this.pic_disp6.Name = "pic_disp6";
+            this.pic_disp6.Size = new System.Drawing.Size(24, 24);
+            this.pic_disp6.TabIndex = 134;
+            this.pic_disp6.TabStop = false;
+            // 
+            // pic_sec5
+            // 
+            this.pic_sec5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_sec5.Location = new System.Drawing.Point(191, 41);
+            this.pic_sec5.Name = "pic_sec5";
+            this.pic_sec5.Size = new System.Drawing.Size(24, 24);
+            this.pic_sec5.TabIndex = 133;
+            this.pic_sec5.TabStop = false;
+            // 
+            // pic_sec6
+            // 
+            this.pic_sec6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pic_sec6.Location = new System.Drawing.Point(236, 41);
+            this.pic_sec6.Name = "pic_sec6";
+            this.pic_sec6.Size = new System.Drawing.Size(24, 24);
+            this.pic_sec6.TabIndex = 134;
+            this.pic_sec6.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1879,15 +1928,15 @@ namespace MasterMind
             this.Text = "Master Mind";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_disp4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_disp3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_disp2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_disp1)).EndInit();
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_sec1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_sec4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_sec2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_sec3)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sol1_1)).EndInit();
@@ -2010,6 +2059,10 @@ namespace MasterMind
             ((System.ComponentModel.ISupportInitialize)(this.comp2_5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comp1_6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comp1_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_disp5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_disp6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_sec5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_sec6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2023,14 +2076,14 @@ namespace MasterMind
         private System.Windows.Forms.ToolStripMenuItem archivoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoJuegoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pic_disp4;
+        private System.Windows.Forms.PictureBox pic_disp3;
+        private System.Windows.Forms.PictureBox pic_disp2;
+        private System.Windows.Forms.PictureBox pic_disp1;
+        private System.Windows.Forms.PictureBox pic_sec1;
+        private System.Windows.Forms.PictureBox pic_sec4;
+        private System.Windows.Forms.PictureBox pic_sec2;
+        private System.Windows.Forms.PictureBox pic_sec3;
         private System.Windows.Forms.PictureBox sol1_1;
         private System.Windows.Forms.PictureBox sol1_2;
         private System.Windows.Forms.PictureBox sol1_3;
@@ -2161,6 +2214,10 @@ namespace MasterMind
         private System.Windows.Forms.PictureBox comp2_5;
         private System.Windows.Forms.PictureBox comp1_6;
         private System.Windows.Forms.PictureBox comp1_5;
+        private System.Windows.Forms.PictureBox pic_disp6;
+        private System.Windows.Forms.PictureBox pic_disp5;
+        private System.Windows.Forms.PictureBox pic_sec6;
+        private System.Windows.Forms.PictureBox pic_sec5;
     }
 }
 

@@ -15,7 +15,7 @@ namespace MasterMind
 
         Color[] arrayColores = new Color [10]; //paleta 10 colores random
         List<int> numRepe = new List<int>(); //controlar que no se repita ningún color en la paleta
-        List <PictureBox> arrayPicColoresDisp = new List<PictureBox>(); // lista de los 4 colores definitivos a elegir
+        List<PictureBox> arrayPicColoresDisp = new List<PictureBox>(); // lista de los 4 colores definitivos a elegir
         List<PictureBox> arrayPicColoresSol = new List<PictureBox>(); // lista de la solución
         List<PictureBox> resultados1 = new List<PictureBox>(); // propuesta solución 1
         List<PictureBox> resultados2 = new List<PictureBox>(); // propuesta solución 2
@@ -50,7 +50,7 @@ namespace MasterMind
 
         public void IniciarJuego()
         {
-
+            
             U1.LimpiarListas(arrayColores,numRepe,arrayPicColoresDisp,arrayPicColoresSol,resultados1,resultados2, resultados3, resultados4, resultados5, resultados6, resultados7, resultados8, resultados9, resultados10);
             U1.LimpiarListasComp(comprobacion1, comprobacion2, comprobacion3, comprobacion4, comprobacion5, comprobacion6, comprobacion7, comprobacion8, comprobacion9, comprobacion10);
             U1.RellenarListas(resultados1,sol1_1,sol1_2,sol1_3,sol1_4,sol1_5,sol1_6);
@@ -75,8 +75,15 @@ namespace MasterMind
             U1.RellenarListas(comprobacion8, comp8_1, comp8_2, comp8_3, comp8_4, comp8_5, comp8_6);
             U1.RellenarListas(comprobacion9, comp9_1, comp9_2, comp9_3, comp9_4, comp9_5, comp9_6);
             U1.RellenarListas(comprobacion10, comp10_1, comp10_2, comp10_3, comp10_4, comp10_5, comp10_6);
-            
+
+
+            Form2 f2 = new Form2();
+            f2.ShowDialog();
+            dificultad = f2.dif;
             CrearColores();
+            IniciarDificultad();
+
+
             foreach (PictureBox p in resultados1)
             {
                 p.BackColor = Color.White;
@@ -107,19 +114,50 @@ namespace MasterMind
             U1.HideWhiteListas(comprobacion9);
             U1.HideWhiteListas(comprobacion10);
 
-            Form2 f2 = new Form2();
-            f2.ShowDialog();
-            dificultad = f2.dif;
-            IniciarDificultad();
+
+            U1.UnlockLista(resultados1);
+            U1.UnlockLista(resultados2);
+            U1.UnlockLista(resultados3);
+            U1.UnlockLista(resultados4);
+            U1.UnlockLista(resultados5);
+            U1.UnlockLista(resultados6);
+            U1.UnlockLista(resultados7);
+            U1.UnlockLista(resultados8);
+            U1.UnlockLista(resultados9);
+            U1.UnlockLista(resultados10);
+
+            button1.Show();
+            button2.Hide();
+            button3.Hide();
+            button4.Hide();
+            button5.Hide();
+            button6.Hide();
+            button7.Hide();
+            button8.Hide();
+            button9.Hide();
+            button10.Hide();
 
         }
 
         public void CrearColores()
         {
-            arrayPicColoresDisp.Add(pictureBox1);
-            arrayPicColoresDisp.Add(pictureBox2);
-            arrayPicColoresDisp.Add(pictureBox3);
-            arrayPicColoresDisp.Add(pictureBox4);
+            arrayPicColoresDisp.Add(pic_disp1);
+            arrayPicColoresDisp.Add(pic_disp2);
+            arrayPicColoresDisp.Add(pic_disp3);
+            arrayPicColoresDisp.Add(pic_disp4);
+
+            if(dificultad == "intermedio")
+            {
+                arrayPicColoresDisp.Add(pic_disp5);
+            }
+
+            else if (dificultad == "avanzado")
+            {
+                arrayPicColoresDisp.Add(pic_disp5);
+                arrayPicColoresDisp.Add(pic_disp6);
+            }
+
+
 
             Random colorRand = new Random();
 
@@ -166,10 +204,35 @@ namespace MasterMind
                 arrayPicColoresDisp[i].BackColor = arrayColores[num_random];
             }
 
-            arrayPicColoresSol.Add(pictureBox5);
-            arrayPicColoresSol.Add(pictureBox6);
-            arrayPicColoresSol.Add(pictureBox7);
-            arrayPicColoresSol.Add(pictureBox8);
+            arrayPicColoresSol.Add(pic_sec1);
+            arrayPicColoresSol.Add(pic_sec2);
+            arrayPicColoresSol.Add(pic_sec3);
+            arrayPicColoresSol.Add(pic_sec4);
+
+            if (dificultad == "intermedio")
+            {
+                arrayPicColoresSol.Add(pic_sec5);
+                pic_sec5.Show();
+                pic_disp5.Show();
+
+                pic_sec6.Hide();
+                pic_disp6.Hide();
+            }
+
+            else if (dificultad == "avanzado")
+            {
+                arrayPicColoresSol.Add(pic_sec5);
+                arrayPicColoresSol.Add(pic_sec6);
+            }
+            else if (dificultad == "principiante")
+            {
+                pic_sec5.Hide();
+                pic_sec6.Hide();
+                pic_disp5.Hide();
+                pic_disp6.Hide();
+            }
+            
+            
 
             //Creacion combinación secreta
             foreach (PictureBox p in arrayPicColoresSol)
@@ -213,7 +276,7 @@ namespace MasterMind
                     U1.NivelPrincipiante(comprobacion9);
                     U1.NivelPrincipiante(comprobacion10);
 
-                    //nombrefuncion(lista)
+                     
                     break;
                 case "intermedio":
                     U1.NivelIntermedio(resultados1);
@@ -240,13 +303,22 @@ namespace MasterMind
                     resultados1[4].Show();
                     comprobacion1[4].Show();
 
-                    break;
+                   break;
 
                 case "avanzado":
                     resultados1[4].Show();
                     resultados1[5].Show();
+
                     comprobacion1[4].Show();
                     comprobacion1[5].Show();
+
+                    arrayPicColoresDisp[4].Show();
+                    arrayPicColoresDisp[5].Show();
+
+                    arrayPicColoresSol[4].Show();
+                    arrayPicColoresSol[5].Show();
+
+
                     break;
 
                 default:
@@ -298,6 +370,21 @@ namespace MasterMind
             contador++;
         }
 
+        private void sol1_5_Click(object sender, EventArgs e)
+        {
+            contador = U1.ReiniciarContador(contador, arrayPicColoresDisp);
+            sol1_5.BackColor = arrayPicColoresDisp[contador].BackColor;
+
+            contador++;
+        }
+        private void sol1_6_Click(object sender, EventArgs e)
+        {
+            contador = U1.ReiniciarContador(contador, arrayPicColoresDisp);
+            sol1_6.BackColor = arrayPicColoresDisp[contador].BackColor;
+
+            contador++;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if(U1.ComprobarSolucionBlancos(resultados1, arrayPicColoresDisp) == true){
@@ -309,14 +396,9 @@ namespace MasterMind
                 MessageBox.Show("Faltan colores");
 
             }
-
-            /*
-            button1.Hide();
-            contador_turno++;
-            button2.Show();
-            */
+            U1.CambioTurno(button1, button2, resultados1, resultados2, comprobacion2);
         }
 
-      
+       
     }
 }
