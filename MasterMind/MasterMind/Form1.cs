@@ -38,10 +38,12 @@ namespace MasterMind
         List<PictureBox> comprobacion8 = new List<PictureBox>(); // comp. solución 8
         List<PictureBox> comprobacion9 = new List<PictureBox>(); // comp. solución 9
         List<PictureBox> comprobacion10 = new List<PictureBox>(); // comp. solución 10
-        int contador = 0;
-        Utilidades U1 = new Utilidades();
 
-        string dificultad = "";
+        int contador = 0; //contador para saber que color ir poniendo en cada picture box
+
+        Utilidades U1 = new Utilidades(); // se crea objeto utilidades
+
+        string dificultad = ""; // para guardar el nivel de dificultad
         
         public Form1()
         {
@@ -51,9 +53,10 @@ namespace MasterMind
         public void IniciarJuego()
         {
             
-            U1.LimpiarListas(arrayColores,numRepe,arrayPicColoresDisp,arrayPicColoresSol,resultados1,resultados2, resultados3, resultados4, resultados5, resultados6, resultados7, resultados8, resultados9, resultados10);
-            U1.LimpiarListasComp(comprobacion1, comprobacion2, comprobacion3, comprobacion4, comprobacion5, comprobacion6, comprobacion7, comprobacion8, comprobacion9, comprobacion10);
-            U1.RellenarListas(resultados1,sol1_1,sol1_2,sol1_3,sol1_4,sol1_5,sol1_6);
+            U1.LimpiarListas(arrayColores,numRepe,arrayPicColoresDisp,arrayPicColoresSol,resultados1,resultados2, resultados3, resultados4, resultados5, resultados6, resultados7, resultados8, resultados9, resultados10);//reseteo soluciones
+            U1.LimpiarListasComp(comprobacion1, comprobacion2, comprobacion3, comprobacion4, comprobacion5, comprobacion6, comprobacion7, comprobacion8, comprobacion9, comprobacion10);//reseteo comprobaciones
+            /* relleno las distintas listas de resultados con sus picture box correspondientes */
+            U1.RellenarListas(resultados1,sol1_1,sol1_2,sol1_3,sol1_4,sol1_5,sol1_6); 
             U1.RellenarListas(resultados2, sol2_1, sol2_2, sol2_3, sol2_4, sol2_5, sol2_6);
             U1.RellenarListas(resultados3, sol3_1, sol3_2, sol3_3, sol3_4, sol3_5, sol3_6);
             U1.RellenarListas(resultados4, sol4_1, sol4_2, sol4_3, sol4_4, sol4_5, sol4_6);
@@ -64,7 +67,7 @@ namespace MasterMind
             U1.RellenarListas(resultados9, sol9_1, sol9_2, sol9_3, sol9_4, sol9_5, sol9_6);
             U1.RellenarListas(resultados10, sol10_1, sol10_2, sol10_3, sol10_4, sol10_5, sol10_6);
 
-
+            /* relleno las distintas listas de comprobaciones con sus picture box correspondientes */
             U1.RellenarListas(comprobacion1, comp1_1, comp1_2, comp1_3, comp1_4, comp1_5, comp1_6);
             U1.RellenarListas(comprobacion2, comp2_1, comp2_2, comp2_3, comp2_4, comp2_5, comp2_6);
             U1.RellenarListas(comprobacion3, comp3_1, comp3_2, comp3_3, comp3_4, comp3_5, comp3_6);
@@ -76,14 +79,16 @@ namespace MasterMind
             U1.RellenarListas(comprobacion9, comp9_1, comp9_2, comp9_3, comp9_4, comp9_5, comp9_6);
             U1.RellenarListas(comprobacion10, comp10_1, comp10_2, comp10_3, comp10_4, comp10_5, comp10_6);
 
-
+            // llamo a la ventana del nivel
             Form2 f2 = new Form2();
             f2.ShowDialog();
-            dificultad = f2.dif;
-            CrearColores();
-            IniciarDificultad();
 
 
+            dificultad = f2.dif; //capturo el nivel de dificultad
+            CrearColores(); //llamo al metodo que crea la paleta de colores
+            IniciarDificultad(); //metodo dificultad, que oculta o muestra cosas según el nivel
+
+            //muetro la primera solución y la primera comprobación
             foreach (PictureBox p in resultados1)
             {
                 p.BackColor = Color.White;
@@ -94,6 +99,7 @@ namespace MasterMind
                 p.BackColor = Color.White;
                 p.Show();
             }
+            /* oculto el resto de soluciones*/
             U1.HideWhiteListas(resultados2);
             U1.HideWhiteListas(resultados3);
             U1.HideWhiteListas(resultados4);
@@ -104,6 +110,7 @@ namespace MasterMind
             U1.HideWhiteListas(resultados9);
             U1.HideWhiteListas(resultados10);
 
+            /* oculto el resto de comprobaciones*/
             U1.HideWhiteListas(comprobacion2);
             U1.HideWhiteListas(comprobacion3);
             U1.HideWhiteListas(comprobacion4);
@@ -126,6 +133,7 @@ namespace MasterMind
             U1.UnlockLista(resultados9);
             U1.UnlockLista(resultados10);
 
+            /*oculto todos los botones menos el primero*/
             button1.Show();
             button2.Hide();
             button3.Hide();
@@ -136,15 +144,19 @@ namespace MasterMind
             button8.Hide();
             button9.Hide();
             button10.Hide();
-            esconderLista.Hide();
+
+            esconderLista.Hide(); //pongo una solapa para ocultar todo cuando se inicia la app
         }
 
         public void CrearColores()
         {
+            /* metodo para crear la paleta de colores, que se guardan en una lista de tipo picture box */
             arrayPicColoresDisp.Add(pic_disp1);
             arrayPicColoresDisp.Add(pic_disp2);
             arrayPicColoresDisp.Add(pic_disp3);
             arrayPicColoresDisp.Add(pic_disp4);
+
+            /* dependiendo del nivel de dificultad, la paleta de colores tendra 4, 5 o 6 colores*/
 
             if(dificultad == "intermedio")
             {
@@ -159,7 +171,7 @@ namespace MasterMind
 
 
 
-            Random colorRand = new Random();
+            Random colorRand = new Random(); //variable para coger colores aleatorios
 
             Color C = Color.White;
 
@@ -204,6 +216,7 @@ namespace MasterMind
                 arrayPicColoresDisp[i].BackColor = arrayColores[num_random];
             }
 
+            //inicializo la lista de picture box de la solución, que dependiendo del nivel de dificultad tendrá 4, 5 o 6 casillas
             arrayPicColoresSol.Add(pic_sec1);
             arrayPicColoresSol.Add(pic_sec2);
             arrayPicColoresSol.Add(pic_sec3);
@@ -234,7 +247,7 @@ namespace MasterMind
             
             
 
-            //Creacion combinación secreta
+            //Creacion combinación secreta recorriendo la lista de la solución
             foreach (PictureBox p in arrayPicColoresSol)
             {
                 num_random = colorRand.Next(0, arrayPicColoresDisp.Count);
@@ -246,7 +259,7 @@ namespace MasterMind
 
         private void nuevoJuegoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            IniciarJuego();
+            IniciarJuego(); // cuando pincha en el botón nuevo juego llamo al metodo iniciar juego
         }
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -257,6 +270,8 @@ namespace MasterMind
         {
             switch (dificultad)
             {
+                /* si es principiante llamo a metodo que oculta la casilla 5 y 6 de cada solución
+                 * y de cada comprobación*/
                 case "principiante":
                     U1.NivelPrincipiante(resultados1);
                     U1.NivelPrincipiante(resultados2);
@@ -283,6 +298,8 @@ namespace MasterMind
                      
                     break;
                 case "intermedio":
+                    /* si es intermedio llamo a metodo que oculta la casilla  6 de cada solución
+             * y de cada comprobación*/
                     U1.NivelIntermedio(resultados1);
                     U1.NivelIntermedio(comprobacion1);
                     U1.NivelIntermedio(resultados2);
@@ -307,6 +324,7 @@ namespace MasterMind
                    break;
 
                 case "avanzado":
+                    /*nivel avanzado muetro la casilla 5 y 6 de todo*/
                     resultados1[4].Show();
                     resultados1[5].Show();
 
@@ -331,6 +349,12 @@ namespace MasterMind
 
 
         #region Solucion Buttons
+
+        /* al pinchar en cada picture box de selección de color hago lo siguiente:
+         * - inicio el contador
+         * - cambio el color
+         * - aumento el contador
+         * */
         private void sol1_1_Click(object sender, EventArgs e)
         {
             contador=U1.ReiniciarContador(contador,arrayPicColoresDisp);
@@ -821,6 +845,12 @@ namespace MasterMind
         }
         #endregion
 
+        /* en cada botón de comprobar hago lo siguiente:
+         *  - compruebo que la solución propuesta no está en blanco
+         *      - si no lo cumple mensaje de aviso y no dejo continuar
+         * - si si q lo cumple ha go las siguientes cosas:
+         *      - compruebo que la solución propuesta es correcta. si es así mensaje de ganador, sino cambio de turno
+         * */
         #region Comprobar Buttons
         private void button1_Click(object sender, EventArgs e)
         {
@@ -1094,12 +1124,14 @@ namespace MasterMind
 
         #endregion
 
+        // abre la ventana de como jugar
         private void comoJugarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ComoJugar jugar = new ComoJugar();
             jugar.ShowDialog();
         }
 
+        //abre la venta de mas info
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AcercaDe acerca = new AcercaDe();

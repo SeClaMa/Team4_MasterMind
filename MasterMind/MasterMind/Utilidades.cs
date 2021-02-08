@@ -12,6 +12,7 @@ namespace MasterMind
     {
         public void RellenarListas(List<PictureBox> resultados, PictureBox pic1, PictureBox pic2, PictureBox pic3, PictureBox pic4, PictureBox pic5, PictureBox pic6)
         {
+            /*metodo para rellenar la lista de tipo picture box con los diferentes picture box pasados como argumento*/
             resultados.Add(pic1);
             resultados.Add(pic2);
             resultados.Add(pic3);
@@ -28,8 +29,10 @@ namespace MasterMind
             }
         }
 
+
         public void LimpiarListas(Color[] a_color,List<int> n_repe,List<PictureBox> colores_disp, List<PictureBox> solucion, List<PictureBox> sol1, List<PictureBox> sol2, List<PictureBox> sol3, List<PictureBox> sol4, List<PictureBox> sol5, List<PictureBox> sol6, List<PictureBox> sol7, List<PictureBox> sol8, List<PictureBox> sol9, List<PictureBox> sol10)
         {
+            /*reinicio todas las listas cuando hay juego nuevo*/
             Array.Clear(a_color, 0, a_color.Length);
             n_repe.Clear();
             colores_disp.Clear();
@@ -48,6 +51,7 @@ namespace MasterMind
 
         public void LimpiarListasComp(List<PictureBox> solucion1, List<PictureBox> solucion2, List<PictureBox> solucion3, List<PictureBox> solucion4, List<PictureBox> solucion5, List<PictureBox> solucion6, List<PictureBox> solucion7, List<PictureBox> solucion8, List<PictureBox> solucion9, List<PictureBox> solucion10)
         {
+            /*reinicio todas las listas de comprobación*/
             solucion1.Clear();
             solucion2.Clear();
             solucion3.Clear();
@@ -60,7 +64,7 @@ namespace MasterMind
             solucion10.Clear();
         }
 
-        public void HideWhiteListas(List<PictureBox> solucion)
+        public void HideWhiteListas(List<PictureBox> solucion) //pone en blanco todas las listas y las oculta
         {
             foreach (PictureBox p in solucion)
             {
@@ -69,7 +73,7 @@ namespace MasterMind
             }
         }
 
-        public void NivelPrincipiante(List<PictureBox> lista)
+        public void NivelPrincipiante(List<PictureBox> lista) //oculto casilla 5 y 6 de la lista q pasen
         {
             lista[4].BackColor = Color.White;
             lista[5].BackColor = Color.White;
@@ -78,14 +82,14 @@ namespace MasterMind
             lista.RemoveRange(4, 2);
         }
 
-        public void NivelIntermedio(List<PictureBox> lista)
+        public void NivelIntermedio(List<PictureBox> lista) //oculto casilla 6 de la lista q pasen
         {
             lista[5].BackColor = Color.White;
             lista[5].Hide();
             lista.RemoveRange(5, 1);
         }
 
-        public int ReiniciarContador(int contador,List<PictureBox> arrayPicColoresDisp)
+        public int ReiniciarContador(int contador,List<PictureBox> arrayPicColoresDisp)//reinicia el contador
         {
             if (contador >= arrayPicColoresDisp.Count)
             {
@@ -94,6 +98,7 @@ namespace MasterMind
             return contador;
         }
 
+        /*comprobar que la solución propuesta tiene todos los valores puestos*/
         public bool ComprobarSolucionBlancos(List<PictureBox> resultados,List<PictureBox> colores_disponibles)
         {
             for (int i = 0; i < resultados.Count; i++)
@@ -106,6 +111,7 @@ namespace MasterMind
             return true;
         }
 
+        /* comprueba la solución propuesta y guarda el numero de aciertos totales y parciales */
         public void ComprobarSolucion(List<PictureBox> resultados, List<PictureBox> solucion,List<PictureBox> compro)
         {
             int contador_total = 0;
@@ -148,9 +154,10 @@ namespace MasterMind
                 }
             }
            /* MessageBox.Show("Totales: " + contador_total + " . Parciales: " + contador_parcial);*/
-            PintarSolucion(contador_total, contador_parcial, compro);
+            PintarSolucion(contador_total, contador_parcial, compro); // llamada al metodo de pintar la solución
         }
 
+        /* dependiendo del número de aciertos pinta la lista de la comprobación*/
         public void PintarSolucion(int cont_total,int cont_parcial,List<PictureBox> compro)
         {
             for(int i = 0; i < compro.Count; i++)
@@ -173,6 +180,7 @@ namespace MasterMind
             }
         }
 
+        /*metodo para pasar de solución*/
         public void CambioTurno(Button button_ocultar, Button button_mostrar, List<PictureBox> lista_Bloquear, List<PictureBox> lista_Mostrar, List<PictureBox> comprobar_mostrar)
         {
             button_ocultar.Hide();
@@ -194,6 +202,7 @@ namespace MasterMind
 
         }
 
+        //comprueba que ha acertado todas las casillas
         public bool CondicionVictoria(List<PictureBox> comprobacion)
         {
             foreach (PictureBox p in comprobacion)

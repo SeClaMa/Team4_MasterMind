@@ -32,3 +32,6 @@ D:\Cursillos\Ejercicios\Proyectos\MasterMind\MasterMind\obj\Debug\MasterMind.For
 D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.Form2.resources
 D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.ComoJugar.resources
 D:\Tic Curso Net\MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.AcercaDe.resources
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.AcercaDe.resources
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.ComoJugar.resources
+C:\Users\gerardo.aguilar\source\repos\SeClaMa\Team4_MasterMind\MasterMind\MasterMind\obj\Debug\MasterMind.Form2.resources
